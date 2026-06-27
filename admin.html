@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Civil Quiz Admin</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+<header class="header">
+  <h1>Civil Engineering MCQ – Admin Page</h1>
+</header>
+
+<main class="container">
+
+  <!-- STEP 1: Yahan tum data likhoge -->
+  <section class="data-input">
+    <h2>STEP 1 – Questions & Options (Data)</h2>
+    <p>
+      Format: Question | A | B | C | D | correct (a/b/c/d) <br>
+      Example: <br>
+      Specific gravity of cement | 2.0 | 3.15 | 4.5 | 1.0 | b
+    </p>
+
+    <textarea id="dataBox" rows="12">
+2+2 = ? | 3 | 4 | 5 | 6 | b
+Unit of stress | N | N/m | N/m² | m²/N | c
+    </textarea>
+
+    <button id="buildBtn" class="btn">Build Quiz Preview</button>
+  </section>
+
+  <!-- STEP 2: Preview + Copy HTML -->
+  <section class="quiz-section">
+    <h2>STEP 2 – Quiz Preview (Same as student page)</h2>
+    <div id="quizArea"></div>
+
+    <button id="copyHtmlBtn" class="btn">Copy Quiz HTML for student page</button>
+    <p class="note">
+      Button दबाकर quiz ka HTML copy करो, phir usko <strong>quiz.html</strong> me paste kar do.
+    </p>
+
+    <!-- Hidden textarea to hold HTML for copy -->
+    <textarea id="htmlOutput" rows="10" style="width:100%; margin-top:10px;"></textarea>
+  </section>
+
+</main>
+
+<script src="admin.js"></script>
+</body>
+</html>
