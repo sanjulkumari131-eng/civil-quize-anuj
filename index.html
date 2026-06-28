@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Civil Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <h1>Test Civil Quiz</h1>
+</header>
+
+<main class="container">
+
+  <section class="data-input">
+    <h2>STEP 1 – Data</h2>
+    <p>Format: Question | A | B | C | D | correct (a/b/c/d)</p>
+
+    <textarea id="dataBox" rows="8">
+2+2 = ? | 3 | 4 | 5 | 6 | b
+Unit of stress | N | N/m | N/m² | m²/N | c
+    </textarea>
+
+    <button id="buildBtn" class="btn">Build Quiz</button>
+  </section>
+
+  <section class="quiz-section">
+    <h2>STEP 2 – Quiz</h2>
+    <div id="quizArea"></div>
+    <button id="checkBtn" class="btn">Check Answers</button>
+    <p id="score" class="score"></p>
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
